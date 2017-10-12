@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Install apache, PHP, and supplimentary programs.
 RUN apt-get update && apt-get -y upgrade && \
-    apt-get install -y apache2 \
+    apt-get install -y apache2 mysql-client \
     php5 libapache2-mod-php5  \
     php5-fpm php5-cli php5-mysql \
     php5-apcu php5-intl php5-imagick php5-mcrypt php5-json php5-gd php5-curl \
